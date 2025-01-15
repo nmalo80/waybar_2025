@@ -108,10 +108,10 @@
 	"on-click": "blueman-manager",
    "on-click-right": "sleep 0.1 && rofi -no-config -show fb -modes 'fb:~/.config/hypr/scripts/btinfo.sh'",
 },
-"clock": {
+"clock#date": {
 	"interval": 1,
-    //"format": " {:%I:%M %p}", // AM PM format
-    "format": " {:%H:%M:%S}", // 24H
+    //"format": "  {:%I:%M %p}", // AM PM format
+   "format": " {:%H:%M  %d %b, %a}", // 24H
 	"format-alt": " {:%H:%M   %Y, %d %B, %A}",
 	"tooltip-format": "<tt><small>{calendar}</small></tt>",
 	"calendar": {
@@ -149,7 +149,8 @@
 "clock#4": {
 	"interval": 60,
     //"format": "{:%B | %a %d, %Y | %I:%M %p}", // AM PM format
-    "format": "{:%B | %a %d, %Y | %H:%M}", // 24H
+    //"format": "{:%B | %a %d, %Y | %H:%M}", // 24H
+	"format": "{:%a %d %b}", // 24H
 	"format-alt": "{:%a %b %d, %G}",
 	"tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
 },
@@ -197,7 +198,7 @@
 	"offscreen-css": true,
 	"offscreen-css-text": "(inactive)",
 	"rewrite": {
-		"(.*) — Mozilla Firefox": " $1",
+		"(.*) — Mozilla Firefox": "  $1",
 		"(.*) - fish": "> [$1]",
 		"(.*) - zsh": "> [$1]",
 		"(.*) - $term": "> [$1]",
@@ -308,7 +309,7 @@
   }
 },
 "pulseaudio": {
-	"format": "{icon} {volume}%",
+	"format": "{icon}   {volume}%",
 	"format-bluetooth": "{icon} 󰂰 {volume}%",
 	"format-muted": "󰖁",
 	"format-icons": {
