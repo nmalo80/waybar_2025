@@ -32,7 +32,7 @@
 	//"custom/separator#dot-line",
 	//"custom/separator#blank_3",
 	//"custom/light_dark",
-	//"mpris", 
+	
    "hyprland/window",
 	],
 
@@ -48,6 +48,7 @@
 "modules-right": [
 	//"network#speed",
 	//"custom/separator#dot-line",
+	"mpris", 
 	"custom/cava_mviz",
 	"tray",
 	//"custom/separator#dot-line",
@@ -59,7 +60,7 @@
 	//"custom/separator#dot-line",
 	//"keyboard-state",
 	//"custom/separator#dot-line",
-	"custom/keyboard",
+	// "custom/keyboard",
 	//"custom/kb",
 	//"custom/separator#dot-line",
 	"custom/weather",
