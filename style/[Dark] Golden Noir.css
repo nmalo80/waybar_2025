@@ -9,13 +9,13 @@
     font-weight: bold;
 	min-height: 0px;  
     /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-    font-size: 102%;     
+    font-size: 103%;     
     font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 }
 
 window#waybar {
     background: rgba(0,0,0,0.6);
-    border-radius: 30px;
+    border-radius: 40px;
     color: #cba6f7;
 
 }
