@@ -1,6 +1,35 @@
-/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-
 // ### DEFAULT - Top ### //
+[{
+	"include": [
+		"$HOME/.config/waybar/Modules",
+		"$HOME/.config/waybar/ModulesWorkspaces",
+		"$HOME/.config/waybar/ModulesCustom",
+		"$HOME/.config/waybar/ModulesGroups",
+		],
+	"layer": "top",
+	"output": "HDMI-A-2",
+	"exclusive": true,
+	"passthrough": false,
+	"position": "top",
+	"spacing": 3,
+	"fixed-center": false,
+	"ipc": true,
+	"margin-top": 8,
+	"margin-left": 8,
+	"margin-right": 8,
+	
+	"modules-left": [
+		"custom/menu",		
+		"hyprland/window",
+	],
+	"modules-right": [
+		"hyprland/workspaces#pacman",
+		"custom/separator#dot-line",
+		//"custom/separator#dot-line",
+		//"custom/hint",
+		"clock#2",
+	], 
+},
 {
 "include": [
   "$HOME/.config/waybar/Modules",
@@ -69,4 +98,4 @@
 	"idle_inhibitor",
 	"custom/power",
 	],
-}
+}]
